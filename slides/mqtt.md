@@ -1,6 +1,6 @@
 # TODO
 
- * Stopped at "part 2"
+ * Test Projector
 
 ---
 
@@ -18,6 +18,12 @@
   * Goals: Light weight, minimal battery loss, bandwidth.
   * Not actually a message queue.
   * MQTT is not an acronym
+
+---
+
+# Who is Using It?
+
+ * Find some exciting use examples.
 
 ---
 
