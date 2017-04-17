@@ -1,14 +1,67 @@
-# TODO
 
- * Test Projector
+# Things Talking to Things With MQTT
+
+### Rick Carlino
+
+**TODO:** Acquire "bell" source code or write fresh example.
+**TODO:** Setup projector at space.
 
 ---
 
-# Talking to Things With MQTT
+# About This Talk
+
+ * Topic
+ * Target Audience
+ * About You
+ * About Me
+ * Other Stuff
 
 ---
 
-# Live Demo
+# What We Want
+
+ * Sending information remotely
+ * Sending commands remotely
+ * Getting *realtime* (push) notifications from devices
+ * Security and Authentication
+ * Dealing with offline situations
+
+---
+
+# Live Demo: The Bell
+
+**What just happened?**
+
+---
+
+# What Can MQTT Do?
+
+ * "Publish" sensor data
+ * "Subscribe" to user input
+ * Handle disconnects
+ * Handle security
+
+---
+
+# What Are People Making with MQTT?
+
+---
+
+# Robotics
+
+![farmbot](/images/farmbot.jpg)
+
+---
+
+# Telemetry / Sensor Systems
+
+![telemetry](/images/telemetry.jpg)
+
+---
+
+# Small Scale Hobby Projects
+
+![hobby projects](/images/diy.jpg)
 
 ---
 
@@ -16,29 +69,24 @@
 
   * Designed in 1999 at IBM. Opensourced in 2010.
   * Goals: Light weight, minimal battery loss, bandwidth.
-  * Not actually a message queue.
-  * MQTT is not an acronym
-
----
-
-# Who is Using It?
-
- * Find some exciting use examples.
+  * MQTT is not an acronym.
+  * It's a message **broker**, Not actually a message queue
 
 ---
 
 # Advantages
- * Websockets
- * Low bandwidth
- * Standardization
- * Well written standard docs (really!)
- * Transmit anything! (JSON, XML, binary, whatever!)
+ * Works on Arudino, browser, desktop, mobile.
+ * Optimized to save bandwidth (cellular devices)
+ * Standardized
+ * Standard is very compact and easy to understand
+ * Well written documentation (really!)
+ * Transmit anything! (JSON, XML, binary, images- whatever!)
 
 ---
 
 # Alternatives
 
- * REST (not good)
+ * REST (not realtime)
  * Raw TCP socket (too much coding)
  * Proprietary "platforms"
 
@@ -63,16 +111,30 @@
 
 # Topics, Pub/Sub
 
- * Organize via "topics"
+ * Organize messages into "topics"
+ * Kind of like a chatroom
  * Example: `house/airconditioner/temp_sensors/1`
  * Sensors "publish" to topics.
  * Consumers "subscribe" to get latest readings.
- * Chat demo among participants?
+ * Wildcards
+ * SYS topics
 
 ---
 
+EXERCISE: MQTT Chat
+
+[http://www.hivemq.com/demos/websocket-client/](http://www.hivemq.com/demos/websocket-client/)
+
+---
+
+EXERCISE: MQTT for ESP
+
+---
 # Advanced Stuff
 
+ * "persistent" messages (message broker style messages)
+ * Last will and testament
+ * QoS
  * Distinction from "real" message queues.
 
 ---
@@ -95,5 +157,7 @@
 # Extras
 
  * MQTT-SN
+ * AWS IoT
+ * https://shiftr.io/
 
 ---
