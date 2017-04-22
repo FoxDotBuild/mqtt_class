@@ -18,9 +18,9 @@
 
 ---
 
-# What We Want
+# What We Will Learn
 
- * Sending information remotely
+ * Sending information remotely (Arduino -> Internet)
  * Sending commands remotely
  * Getting *realtime* (push) notifications from devices
  * Security and Authentication
@@ -36,7 +36,7 @@
 
 # What Can MQTT Do?
 
- * "Publish" sensor data
+ * "Publish" sensor data using "topics"
  * "Subscribe" to user input
  * Handle disconnects
  * Handle security
@@ -95,12 +95,13 @@
 # Clients
 
  * [Android MQTT clients](https://play.google.com/store/apps/details?id=at.tripwire.mqtt.client&hl=en)
- * TODO: Find iOS clients
  * [Web Browser](http://www.hivemq.com/demos/websocket-client/)
 
 ---
 
  # Brokers
+
+Very easy to run your own MQTT server.
 
  * Mosquitto (`sudo apt-get install mosquitto`)
  * Mosca
@@ -121,13 +122,53 @@
 
 ---
 
+# Topic Pattern
+
+ * `/` Symbol
+ * `$` symbol
+ * `#` symbol
+
+EXAMPLES: `/home/sensors/thermostat1`, `/home/sensors/#`, `/$SYS/#`.
+
+---
+
 EXERCISE: MQTT Chat
+
+Before using MQTT on a device, let's use MQTT with our laptops.
+
+[http://www.hivemq.com/demos/websocket-client/](http://www.hivemq.com/demos/websocket-client/)
+
+---
+
+EXERCISE: "retained" messages
+
+What if no one is around to receive the message?
+
+[http://www.hivemq.com/demos/websocket-client/](http://www.hivemq.com/demos/websocket-client/)
+
+---
+
+# Quality of Service (QoS)
+
+3 levels:
+
+ * At most once (0) - "unimportant" data, like live streams.
+ * At least once (1) - guaranteed delivery, possible duplicates.
+ * Exactly once (2) - Most resource intensive for server. **Not possible on all servers!**
+
+---
+
+EXERCISE: "last will" messages
+
+What if you need to react to device failure?
 
 [http://www.hivemq.com/demos/websocket-client/](http://www.hivemq.com/demos/websocket-client/)
 
 ---
 
 EXERCISE: MQTT for ESP
+
+Now let's build an MQTT-enabled bell.
 
 ---
 # Advanced Stuff
@@ -136,7 +177,7 @@ EXERCISE: MQTT for ESP
  * Last will and testament
  * QoS
  * Distinction from "real" message queues.
-
+ * "retained" messages
 ---
 
 # Security
