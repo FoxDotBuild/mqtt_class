@@ -3,8 +3,8 @@
 
 ### Rick Carlino
 
-**TODO:** Acquire "bell" source code or write fresh example.
-**TODO:** Setup projector at space.
+**TODO:** Talk about "clean sessions"
+**TODO:** Add source code walk through for each line of code.
 
 ---
 
@@ -31,6 +31,11 @@
 # Live Demo: The Bell
 
 **What just happened?**
+
+---
+
+# Live Demo: FarmBot
+
 
 ---
 
@@ -75,6 +80,7 @@
 ---
 
 # Advantages
+
  * Works on Arudino, browser, desktop, mobile.
  * Optimized to save bandwidth (cellular devices)
  * Standardized
@@ -117,8 +123,6 @@ Very easy to run your own MQTT server.
  * Example: `house/airconditioner/temp_sensors/1`
  * Sensors "publish" to topics.
  * Consumers "subscribe" to get latest readings.
- * Wildcards
- * SYS topics
 
 ---
 
@@ -132,7 +136,7 @@ EXAMPLES: `/home/sensors/thermostat1`, `/home/sensors/#`, `/$SYS/#`.
 
 ---
 
-EXERCISE: MQTT Chat
+# EXERCISE: MQTT Chat
 
 Before using MQTT on a device, let's use MQTT with our laptops.
 
@@ -140,7 +144,9 @@ Before using MQTT on a device, let's use MQTT with our laptops.
 
 ---
 
-EXERCISE: "retained" messages
+# EXERCISE: "retained" messages
+
+(Wind turbine example)
 
 What if no one is around to receive the message?
 
@@ -168,7 +174,7 @@ What if you need to react to device failure?
 
 EXERCISE: MQTT for ESP
 
-Now let's build an MQTT-enabled bell.
+Now let's build an MQTT-enabled bell ringer.
 
 ---
 # Advanced Stuff
