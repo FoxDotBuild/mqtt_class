@@ -3,9 +3,8 @@
 
 ### Rick Carlino
 
-**TODO:** Talk about "clean sessions"
 **TODO:** Add source code walk through for each line of code.
-
+**TODO:** Add more topic design notes, example topics (esp. `+` vs. `#`).
 ---
 
 # About This Talk
@@ -126,9 +125,10 @@ Very easy to run your own MQTT server.
 
 ---
 
-# Topic Pattern
+# Topic Patterns
 
- * `/` Symbol
+ * `+` symbol
+ * `/` symbol
  * `$` symbol
  * `#` symbol
 
