@@ -5,6 +5,7 @@
 
 **TODO:** Add source code walk through for each line of code.
 **TODO:** Add more topic design notes, example topics (esp. `+` vs. `#`).
+
 ---
 
 # About This Talk
@@ -53,19 +54,19 @@
 
 # Robotics
 
-![farmbot](/images/farmbot.jpg)
+![farmbot](images/farmbot.jpg)
 
 ---
 
 # Telemetry / Sensor Systems
 
-![telemetry](/images/telemetry.jpg)
+![telemetry](images/telemetry.jpg)
 
 ---
 
 # Small Scale Hobby Projects
 
-![hobby projects](/images/diy.jpg)
+![hobby projects](images/diy.jpg)
 
 ---
 
