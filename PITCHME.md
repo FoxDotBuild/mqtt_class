@@ -3,9 +3,6 @@
 
 ### Rick Carlino
 
-**TODO:** Add source code walk through for each line of code.
-**TODO:** Add more topic design notes, example topics (esp. `+` vs. `#`).
-
 ---
 
 # About This Talk
@@ -138,6 +135,10 @@ EXAMPLES: `/home/sensors/thermostat1`, `/home/sensors/#`, `/$SYS/#`.
 ---
 
 # EXERCISE: MQTT Chat
+
+ * Server: `67.205.153.250`
+ * Port: `8083`
+ * Username: `foxbuild`
 
 Before using MQTT on a device, let's use MQTT with our laptops.
 
